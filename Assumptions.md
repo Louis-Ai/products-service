@@ -1,0 +1,2 @@
+- If price can't be calculated we shouldn't return that item on the list back but should be logged 
+- Weight is supplied in grams 

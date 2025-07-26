@@ -11,7 +11,9 @@ func NewDeliverySelector(provider string, pricePerGram float64) (ports.DeliveryS
 	switch strings.ToUpper(provider) {
 	case "UPS":
 		return NewUPSService(pricePerGram), nil
+	case "ROYAL-MAIL":
+		return NewRoyalMailService(pricePerGram), nil
 	default:
-		return nil, fmt.Errorf("Delivery provider does not match any available: %v", provider)
+		return nil, fmt.Errorf("delivery provider does not match any available: %v", provider)
 	}
 }

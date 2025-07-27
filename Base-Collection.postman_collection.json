@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "cfcd572b-73bd-44ad-8fba-89ac52711db1",
+		"name": "Base-Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47108852",
+		"_collection_link": "https://navigation-astronomer-6314717-5267496.postman.co/workspace/Louis-A's-Workspace~8adf8ecd-87e1-4a99-8c98-22fe176dcafb/collection/47108852-cfcd572b-73bd-44ad-8fba-89ac52711db1?action=share&source=collection_link&creator=47108852"
+	},
+	"item": [
+		{
+			"name": "get-priced-products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/products",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

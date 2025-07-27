@@ -115,6 +115,6 @@ The example below is using UPS as the delivery service and has the price set as 
 - [ ] Adequate unit testing
 - [x] API and Mongo running in a container with Docker Compose with Mongo starting before the app on port `27017` with the port coming from a `.env` file
 - [x] Appropriate logging/tracing, including a log which states which delivery service was used just like the `Examples` section
-- [ ] Postman collection and environment provided
+- [x] Postman collection and environment provided
 - [x] Makefile with commands to `stop` and `start` the service
 

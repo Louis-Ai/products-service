@@ -1,2 +1,5 @@
 - If price can't be calculated we shouldn't return that item on the list back but should be logged 
 - Weight is supplied in grams 
+- Delivery pricing is quite simple (price per gram * product weight) / flat rate like the royal mail example - this could be changed in each individual delivery service 
+- JSON file and executable application being in the same directory - set up in docker file
+- No detailing issues back to clients. Logged and 500 errors sent back instead

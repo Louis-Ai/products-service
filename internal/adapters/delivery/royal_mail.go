@@ -13,9 +13,10 @@ func NewRoyalMailService(pricePerGram float64) *RoyalMailService {
 }
 
 func (s *RoyalMailService) Calculate(product domain.Product) (float64, error) {
-	deliveryPrice := s.pricePerGram * product.Weight
-
-	return deliveryPrice, nil
+	if product.Weight <= 2000 {
+		return 4.50, nil
+	}
+	return 15.00, nil
 }
 
 func (s *RoyalMailService) ProviderName() string {
